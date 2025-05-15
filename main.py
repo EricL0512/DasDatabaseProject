@@ -13,7 +13,7 @@ query = f"CALL Student_Info({student_id})"
 cursor.execute(query)
 
 for row in cursor:
-    period, course, room, teacher = [i for i in row]
+    period, course, room, teacher = row[:4]
     print(f"Period: {period}\nCourse: {course}\nRoom: {room}\nTeacher: {teacher}\n")
 
 cursor.close()
