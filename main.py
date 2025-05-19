@@ -5,7 +5,7 @@ from mysql.connector.pooling import PooledMySQLConnection
 
 def get_database_connection() -> PooledMySQLConnection | MySQLConnectionAbstract:
     connection = mysql.connector.connect(user='ericl160',
-                                         password='222924870',
+                                         password='R',
                                          host='10.8.37.226',
                                          database='ericl160_db')
     return connection
